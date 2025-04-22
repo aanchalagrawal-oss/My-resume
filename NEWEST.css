@@ -1,0 +1,139 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #333;
+        background-color: #fdfdfd;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(to right, #1a73e8, #4a90e2);
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem 3rem;
+      }
+
+      header img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        margin-bottom: 1rem;
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
+      nav {
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      nav a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #1a73e8;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+        list-style-type: disc;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+      }
+
+      #connect form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      #connect input,
+      #connect textarea {
+        padding: 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.4rem;
+        width: 100%;
+      }
+
+      #connect button {
+        background: #1a73e8;
+        color: white;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 0.4rem;
+        cursor: pointer;
+      }
+
+      #connect button:hover {
+        background: #1559c4;
+      }
+
+      .linkedin-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        border: 2px solid #1a73e8;
+        color: #1a73e8;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .linkedin-btn:hover {
+        background: #1a73e8;
+        color: #fff;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: #f8f9fa;
+        color: #777;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        nav {
+          gap: 1rem;
+        }
+      }
