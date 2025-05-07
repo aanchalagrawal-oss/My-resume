@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Your Brand</div>
+    <div class="hamburger">&#9776;</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <h1>Our Services</h1>
+      <p>Explore the range of services we offer to cater to your needs. We focus on quality and satisfaction.</p>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>What We Offer</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://media.istockphoto.com/id/1241455969/photo/friendly-dentist-woman-treating-patient.jpg?s=612x612&w=0&k=20&c=duVCfo1TSB0BoDE85PZ2EjNMqN1LiUhICM3weuyV_lQ=" alt="General Dentistry">
+            <h3>General Dentistry</h3>
+            <p>Comprehensive dental exams, cleanings, and fillings to maintain oral health.</p>
+          </div>
+          <div class="service">
+            <img src="https://media.istockphoto.com/id/1206712036/photo/treatment-and-whitening-of-teeth-dental-crowns-before-and-after-dentistry-close-up.jpg?s=612x612&w=0&k=20&c=dBsS-HPi53g17O8VMbjcytOEU1Jk6KZMnsStVxSVimI=" alt="Cosmetic Dentistry">
+            <h3>Cosmetic Dentistry</h3>
+            <p>Veneers, whitening, and other treatments to enhance the aesthetics of your smile.</p>
+          </div>
+          <div class="service">
+            <img src="https://img.freepik.com/free-photo/dental-procedure-installing-braces-close-up-dentistry-braces-teeth_169016-67279.jpg?semt=ais_hybrid&w=740" alt="Orthodontics">
+            <h3>Orthodontics</h3>
+            <p>Braces and aligners to straighten teeth and improve bite alignment.</p>
+          </div><!-- Add more services as needed -->
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <div class="cta">
+    <h3>Ready to get started?</h3>
+    <p>Contact us today and let's discuss how we can assist you with our premium services.</p>
+    <button>Contact Us</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Sitemap</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript for the hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

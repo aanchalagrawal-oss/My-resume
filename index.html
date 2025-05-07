@@ -1,338 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aanchal Agrawal | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        font-family: "Inter", sans-serif;
-        color: #222;
-        background: #f9fafb;
-        line-height: 1.6;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrawal Dental Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    crossorigin="anonymous" />
 
-      header {
-        background: linear-gradient(135deg, #2563eb, #3b82f6);
-        color: white;
-        text-align: center;
-        padding: 5rem 1rem 3rem;
-      }
+<link rel="stylesheet" href="style.css">
+</head>
 
-      header img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        border: 4px solid #fff;
-        object-fit: cover;
-        margin-bottom: 1rem;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      }
+<body>
 
-      header h1 {
-        font-size: 2.5rem;
-        font-weight: 800;
-        margin-bottom: 0.5rem;
-      }
+  <!-- Navbar -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <div class="logo">Agrawal Dental</div>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-      header p {
-        font-size: 1.2rem;
-        opacity: 0.95;
-      }
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <h1>Welcome to Agrawal Dental Clinic</h1>
+      <p>Creating Confident Smiles for Over 20 Years</p>
+    </div>
+  </header>
+  
 
-      nav {
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.2rem;
-        padding: 1rem 0;
-        border-bottom: 1px solid #e5e7eb;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-      }
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="https://www.dentaverse.in/wp-content/uploads/2022/06/prevention-2-500x300.jpg" alt="About Us Image">
+      </div>
+      <div class="about-text">
+        <h3>Our Story</h3>
+        <p>
+          Agrawal Dental Clinic has been providing exceptional dental care in the heart of Jalgaon for over 20 years.
+          Led by the experienced Dr. Jitendra and Dr. Neha Agrawal, our clinic specializes in advanced dental treatments
+          for all ages. We pride ourselves on offering personalized care and innovative solutions to ensure the best
+          outcomes for our patients.
+        </p>
+      </div>
+    </div>
+  </section>
 
-      nav a {
-        color: #2563eb;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.5rem 0.8rem;
-        border-radius: 0.4rem;
-        transition: background 0.3s;
-      }
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://media.istockphoto.com/id/1241455969/photo/friendly-dentist-woman-treating-patient.jpg?s=612x612&w=0&k=20&c=duVCfo1TSB0BoDE85PZ2EjNMqN1LiUhICM3weuyV_lQ=" alt="General Dentistry">
+        <h3>General Dentistry</h3>
+        <p>Comprehensive dental exams, cleanings, and fillings to maintain oral health.</p>
+      </div>
+      <div class="service">
+        <img src="https://media.istockphoto.com/id/1206712036/photo/treatment-and-whitening-of-teeth-dental-crowns-before-and-after-dentistry-close-up.jpg?s=612x612&w=0&k=20&c=dBsS-HPi53g17O8VMbjcytOEU1Jk6KZMnsStVxSVimI=" alt="Cosmetic Dentistry">
+        <h3>Cosmetic Dentistry</h3>
+        <p>Veneers, whitening, and other treatments to enhance the aesthetics of your smile.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.freepik.com/free-photo/dental-procedure-installing-braces-close-up-dentistry-braces-teeth_169016-67279.jpg?semt=ais_hybrid&w=740" alt="Orthodontics">
+        <h3>Orthodontics</h3>
+        <p>Braces and aligners to straighten teeth and improve bite alignment.</p>
+      </div>
+    </div>
+  </section>
 
-      nav a:hover {
-        background-color: #e0ecff;
-      }
+  <!-- CTA Section -->
+  <section class="cta" id="contact">
+    <h2>Ready to Smile? Contact Us Today!</h2>
+    <button onclick="window.location.href='mailto:info@agrawaldentalclinic.com'">Book Appointment</button>
+  </section>
 
-      section {
-        max-width: 900px;
-        margin: 2.5rem auto;
-        padding: 0 1.5rem;
-      }
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Agrawal Dental Clinic. All rights reserved.</p>
+    <ul>
+      <li><a href="https://facebook.com/AgrawalDental" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/AgrawalDental" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com/AgrawalDental" target="_blank">Instagram</a></li>
+    </ul>
+  </footer>
 
-      h2 {
-        font-size: 2rem;
-        color: #2563eb;
-        margin-bottom: 1rem;
-      }
+  <!-- Hamburger JS -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('active');
+    }
+  </script>
+</body>
 
-      ul {
-        padding-left: 1.2rem;
-        list-style-type: disc;
-      }
-
-      li {
-        margin-bottom: 0.7rem;
-        font-size: 1.05rem;
-      }
-
-      #connect form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-bottom: 1rem;
-      }
-
-      #connect input,
-      #connect textarea {
-        padding: 1rem;
-        font-size: 1rem;
-        border: 1px solid #d1d5db;
-        border-radius: 0.5rem;
-        width: 100%;
-        background-color: #fff;
-      }
-
-      #connect button {
-        background: #2563eb;
-        color: white;
-        padding: 0.9rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-
-      #connect button:hover {
-        background: #1e4fd1;
-      }
-
-      .linkedin-btn {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.6rem 1.4rem;
-        border: 2px solid #2563eb;
-        color: #2563eb;
-        border-radius: 0.5rem;
-        text-decoration: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .linkedin-btn:hover {
-        background: #2563eb;
-        color: #fff;
-      }
-
-      footer {
-        text-align: center;
-        padding: 2rem 1rem;
-        background: #f3f4f6;
-        color: #6b7280;
-        font-size: 0.95rem;
-      }
-
-      .section {
-        scroll-margin-top: 100px; /* Adjust this if navbar height changes */
-        margin-bottom: 3rem;
-      }
-
-      .card {
-        background-color: #ffffff;
-        border-radius: 1rem;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-        padding: 2rem;
-        margin: 1.5rem 1rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 100%;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      }
-
-      @media (max-width: 768px) {
-        .card {
-          padding: 1.2rem;
-          margin: 1rem;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .card {
-          padding: 1rem;
-          margin: 0.8rem;
-        }
-      }
-
-      @media (max-width: 600px) {
-        header h1 {
-          font-size: 2rem;
-        }
-        nav {
-          gap: 0.8rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img
-        src="my_blue_shirt_pic-Picsart-AiImageEnhancer-removebg-preview.png"
-        alt="Aanchal Agrawal Profile Picture"
-      />
-      <h1>Hello 👋, I'm Aanchal</h1>
-      <p>IIM Bangalore student, economics enthusiast, curious writer.</p>
-    </header>
-
-    <nav>
-      <a href="#education">Education</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#story">My Story</a>
-      <a href="#connect">Connect</a>
-    </nav>
-    <main class="container">
-      <section id="education" class="section">
-        <div class="card">
-          <h2>📚 Education</h2>
-          <ul>
-            <li>
-              <strong>IIM Bangalore</strong> — BBA, Digital Business &
-              Entrepreneurship
-            </li>
-            <li>
-              <strong>NMIMS</strong> — BBA, Anil Surendra Modi School Of
-              Commerce
-            </li>
-            <li>
-              <strong>IIGL</strong> — Diploma in International Affairs &
-              Diplomacy
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="achievements" class="section">
-        <div class="card">
-          <h2>🏆 Achievements</h2>
-          <ul>
-            <li><strong>Immerse Education Scholarship Recipient</strong> — Awarded a 75% scholarship for writing and analytical skills to attend the Philosophy, Politics, and Economics (PPE) summer program at <strong>Oxford University</strong></li>
-            <li><strong>Harvard Crimson Asian Region Winner</strong> — Recognised as Regional Winner for the Harvard Crimson Essay Competition for "Indian Media and the 26/11 Attack: From Breaking News to Broken Societies," analysing sensational journalism's impact</li>
-            <li><strong>YLAC Summer Program Participant</strong> — Selected for a national summer programme exploring socio-political issues and urban challenges.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="publications" class="section">
-        <div class="card">
-          <h2>📝 Publications</h2>
-          <ul>
-            <li>
-              <strong>Inspire Youth Journal</strong> — Published an article on Nano DAP fertilisers and sustainable food security.
-            </li>
-            <li><strong>The Current Chronicles</strong> — Founder of this platform to spark conversations on global economic and political issues.</li>
-            <li>
-              <strong>Hashtag Kalakar Magazine</strong> — Published "Indian Media and the 26/11 Attack: From Breaking News to Broken Societies" in a national magazine.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="card">
-          <h2>💼 Experience</h2>
-          <ul>
-            <li>
-              <strong>FinCocktail</strong> — Managed Twitter and LinkedIn accounts under Sayali Rai, NYU graduate’s guidance.
-
-            </li>
-            <li><strong>The Current Chronicles</strong> — Led content strategy and social media growth on Twitter, LinkedIn, and Instagram.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="story" class="section">
-        <div class="card">
-          <h2>📖 My Story</h2>
-          <p>
-            Hi, I’m Aanchal Agrawal, currently in my first year of a dual degree in management studies. I’ve always found myself drawn to the ‘whys’ and ‘hows’ behind the issues we see around us. That curiosity slowly turned into a habit of writing — turning questions into research-driven articles, and ideas into conversations.
-          </p>
-          <p>
-            Some of those pieces ended up opening unexpected doors. I was grateful to receive a 75% scholarship to Oxford’s summer school through the Immerse Education Essay Competition, and to be named the Asian Region Winner in the Harvard Crimson Essay Competition.
-          </p>
-          <p>
-            But honestly, what matters most to me isn’t the titles — it’s what those experiences taught me. Whether it’s through writing, public policy, or entrepreneurship, I’ve realised how powerful it can be when ideas move beyond words and start creating change, no matter how small. And I’m still figuring things out — learning, trying, and staying curious about what’s next.
-
-            <BR></BR>If you’re someone who loves asking questions, chasing ideas, or just figuring out where you fit in, I’d love to hear your story.
-            
-            Let’s learn, share, and maybe build something meaningful together.
-          </p>
-        </div>
-      </section>
-
-      <section id="connect" class="section">
-        <div class="card">
-          <h2>📬 Connect With Me</h2>
-          <form
-            action="mailto:aanchaljagrawal@gmail.com"
-            method="POST"
-            enctype="text/plain"
-          >
-            <input
-              type="email"
-              name="Email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              name="Message"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-          <a
-            href="https://www.linkedin.com/in/aanchal-agrawal-9a659a251/"
-            target="_blank"
-            class="linkedin-btn"
-            >Connect via LinkedIn</a
-          >
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2025 Aanchal Agrawal</p>
-    </footer>
-  </body>
 </html>
